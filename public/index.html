@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemonyy - Mouth-Watering Sour Fruits & Popsicles</title>
+    <meta name="description"
+        content="Satisfy your cravings with our premium sour fruit dishes and refreshing popsicles.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🍋 Lemonyy</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order Now</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Tangy. Juicy. <span class="highlight">Irresistible.</span></h1>
+            <p>Experience the ultimate burst of flavors with our mouth-watering sour fruit dishes and frosty popsicles.
+            </p>
+            <a href="#menu" class="cta-button">Explore the Menu</a>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Mouth-Watering Menu</h2>
+        <p class="section-subtitle">Prepared fresh to make your taste buds tingle</p>
+
+        <div class="menu-grid">
+            <!-- Guava Dish -->
+            <div class="menu-card" onclick="selectItem('Masaala Guvava', 'Fruit Dish', 49)">
+                <div class="card-img-wrapper">
+                    <img src="./guava_dish.png" alt="Masaala Guvava" loading="lazy">
+                    <div class="price-tag">₹49</div>
+                </div>
+                <div class="card-content">
+                    <h3>Masaala Guvava</h3>
+                    <p>Freshly sliced pink guava with our signature tangy masala mix.</p>
+                    <button class="add-to-order-btn">Order This</button>
+                </div>
+            </div>
+
+            <!-- Kaccha Mango Dish -->
+            <div class="menu-card" onclick="selectItem('Kaccha Mango', 'Fruit Dish', 49)">
+                <div class="card-img-wrapper">
+                    <img src="./kaccha_mango.png" alt="Kaccha Mango" loading="lazy">
+                    <div class="price-tag">₹49</div>
+                </div>
+                <div class="card-content">
+                    <h3>Tangy Kaccha Mango</h3>
+                    <p>Raw green mango slices dusted with fiery red chili and rock salt.</p>
+                    <button class="add-to-order-btn">Order This</button>
+                </div>
+            </div>
+
+            <!-- Pineapple Dish -->
+            <div class="menu-card" onclick="selectItem('Pineapple Dish', 'Fruit Dish', 55)">
+                <div class="card-img-wrapper">
+                    <img src="./pineapple_dish.png" alt="Pineapple Dish" loading="lazy">
+                    <div class="price-tag">₹55</div>
+                </div>
+                <div class="card-content">
+                    <h3>Tropical Pineapple</h3>
+                    <p>Juicy golden pineapple cut in beautiful round slices with a sweet and spicy kick.</p>
+                    <button class="add-to-order-btn">Order This</button>
+                </div>
+            </div>
+
+            <!-- Imli Dish -->
+            <div class="menu-card" onclick="selectItem('Tangy Imli', 'Fruit Dish', 49)">
+                <div class="card-img-wrapper">
+                    <img src="./imli.png" alt="Tangy Imli" loading="lazy">
+                    <div class="price-tag">₹49</div>
+                </div>
+                <div class="card-content">
+                    <h3>Tangy (Imli)</h3>
+                    <p>Mouth-watering sour tamarind pods generously coated with premium spices.</p>
+                    <button class="add-to-order-btn">Order This</button>
+                </div>
+            </div>
+
+            <!-- Pineapple Flavour Pops -->
+            <div class="menu-card" onclick="selectItem('Pineapple Flavour Pops', 'Popsicle', 39)">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1556662508-58d3a11df6e2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Pineapple Flavour Pops" loading="lazy">
+                    <div class="price-tag">₹39</div>
+                </div>
+                <div class="card-content">
+                    <h3>Pineapple Flavour Pops</h3>
+                    <p>Vibrant yellow tube-shaped pineapple popsicle to beat the heat.</p>
+                    <button class="add-to-order-btn">Order This</button>
+                </div>
+            </div>
+
+            <!-- Orange Flavour Pops -->
+            <div class="menu-card" onclick="selectItem('Orange Flavour Pops', 'Popsicle', 39)">
+                <div class="card-img-wrapper">
+                    <img src="https://chatgpt.com/s/m_69c2da40d4348191b20b89676fc7d169" alt="Orange Flavour Pops"
+                        loading="lazy">
+                    <div class="price-tag">₹39</div>
+                </div>
+                <div class="card-content">
+                    <h3>Orange Flavour Pops</h3>
+                    <p>Bright orange tube-shaped refreshing citrus popsicle.</p>
+                    <button class="add-to-order-btn">Order This</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section">
+        <div class="order-container">
+            <div class="order-info">
+                <h2>Place Your Order</h2>
+                <p>Select an item from the menu, enter your details, and we'll have it ready for you!</p>
+                <div class="selected-item-display" id="selected-item-display">
+                    No item selected yet. Click on a menu item!
+                </div>
+            </div>
+            <form id="order-form" class="glass-form">
+                <input type="hidden" id="item-name" name="itemName">
+                <input type="hidden" id="item-type" name="itemType">
+                <input type="hidden" id="item-price" name="itemPrice">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="9876543210" pattern="[0-9]{10}">
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+                </div>
+
+                <button type="submit" class="submit-btn" id="order-submit-btn">Complete Order <span
+                        id="total-price"></span></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <h2>What Our Customers Say</h2>
+        <div class="reviews-grid" id="reviews-grid">
+            <!-- Reviews will be loaded here dynamically -->
+        </div>
+
+        <div class="add-review-container">
+            <h3>Leave a Review</h3>
+            <form id="review-form" class="glass-form">
+                <div class="form-group">
+                    <label for="reviewer-name">Your Name</label>
+                    <input type="text" id="reviewer-name" name="reviewerName" required>
+                </div>
+                <div class="form-group">
+                    <label>Rating</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5"
+                            title="5 stars">★</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4"
+                            title="4 stars">★</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3"
+                            title="3 stars">★</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2"
+                            title="2 stars">★</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1"
+                            title="1 star">★</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="review-text">Your Experience</label>
+                    <textarea id="review-text" name="reviewText" rows="4" required
+                        placeholder="Tell us how mouth-watering it was!"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lemonyy. All rights reserved.</p>
+        <p>Your favorite destination for mouth-watering sour fruits & popsicles.</p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Action Successful</div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

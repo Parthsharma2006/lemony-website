@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+
+# Ignore local database files so you don't accidentally publish customer data
+data/*.json
