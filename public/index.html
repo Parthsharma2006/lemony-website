@@ -86,7 +86,8 @@
             <!-- Imli Dish -->
             <div class="menu-card" onclick="selectItem('Tangy Imli', 'Fruit Dish', 49)">
                 <div class="card-img-wrapper">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRty6TlTbklXKk0356Bw36mV8yvmZFJsy6NIQ&s" alt="Tangy Imli" loading="lazy">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRty6TlTbklXKk0356Bw36mV8yvmZFJsy6NIQ&s"
+                        alt="Tangy Imli" loading="lazy">
                     <div class="price-tag">₹49</div>
                 </div>
                 <div class="card-content">
@@ -99,14 +100,15 @@
             <!-- Pineapple Flavour Pops -->
             <div class="menu-card" style="opacity: 0.6; cursor: not-allowed;">
                 <div class="card-img-wrapper">
-                    <img src=https://thehealthfulideas.com/wp-content/uploads/2023/05/Pineapple-Popsicles-SQUARE.jpg"
+                    <img src="https://thehealthfulideas.com/wp-content/uploads/2023/05/Pineapple-Popsicles-SQUARE.jpg"
                         alt="Pineapple Flavour Pops" loading="lazy" style="filter: grayscale(100%);">
                     <div class="price-tag" style="background: #e53e3e;">Sold Out</div>
                 </div>
                 <div class="card-content">
                     <h3>Pineapple Flavour Pops</h3>
                     <p>Vibrant yellow tube-shaped pineapple popsicle to beat the heat.</p>
-                    <button class="add-to-order-btn" disabled style="background: #a0aec0; cursor: not-allowed; transform: none;">Out of Stock</button>
+                    <button class="add-to-order-btn" disabled
+                        style="background: #a0aec0; cursor: not-allowed; transform: none;">Out of Stock</button>
                 </div>
             </div>
 
@@ -114,13 +116,14 @@
             <div class="menu-card" style="opacity: 0.6; cursor: not-allowed;">
                 <div class="card-img-wrapper">
                     <img src="https://thehealthfulideas.com/wp-content/uploads/2025/06/Passion-Fruit-Popsicles-SQUARE.jpg"
-                        loading="lazy" style="filter: grayscale(100%);">
+                        alt="Orange Flavour Pops" loading="lazy" style="filter: grayscale(100%);">
                     <div class="price-tag" style="background: #e53e3e;">Sold Out</div>
                 </div>
                 <div class="card-content">
                     <h3>Orange Flavour Pops</h3>
                     <p>Bright orange tube-shaped refreshing citrus popsicle.</p>
-                    <button class="add-to-order-btn" disabled style="background: #a0aec0; cursor: not-allowed; transform: none;">Out of Stock</button>
+                    <button class="add-to-order-btn" disabled
+                        style="background: #a0aec0; cursor: not-allowed; transform: none;">Out of Stock</button>
                 </div>
             </div>
         </div>
@@ -137,10 +140,6 @@
                 </div>
             </div>
             <form id="order-form" class="glass-form">
-                <input type="hidden" id="item-name" name="itemName">
-                <input type="hidden" id="item-type" name="itemType">
-                <input type="hidden" id="item-price" name="itemPrice">
-
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -148,12 +147,7 @@
 
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="9876543210" pattern="[0-9]{10}">
-                </div>
-
-                <div class="form-group">
-                    <label for="quantity">Quantity</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+                    <input type="tel" id="phone" name="phone" required placeholder="98765*****" pattern="[0-9]{10}">
                 </div>
 
                 <button type="submit" class="submit-btn" id="order-submit-btn">Complete Order <span
