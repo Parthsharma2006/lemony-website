@@ -177,11 +177,13 @@ orderForm.addEventListener('submit', async (e) => {
         message += `\n*Total Price:* ₹${orderData.totalPrice}\n\n*Please confirm my order.*`;
         
         const whatsappUrl = `https://wa.me/916353636794?text=${encodeURIComponent(message)}`;
-        window.open(whatsappUrl, '_blank');
-
+        
         orderForm.reset();
         cart = [];
         updateCartDisplay();
+        
+        // Redirect directly to avoid popup blockers from squashing the window.open call after await
+        window.location.href = whatsappUrl;
     } catch (error) {
         console.error('Error:', error);
         showToast('Database error. Did you update firebase-config.js?', 'error');
