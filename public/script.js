@@ -128,7 +128,12 @@ orderForm.addEventListener('submit', async (e) => {
         await addDoc(collection(db, "orders"), orderData);
         
         submitBtn.innerHTML = ogText;
-        showToast('Order placed successfully! We will prepare it right away.');
+        showToast('Order placed successfully! Redirecting to WhatsApp...');
+        
+        const message = `*New Order!*\n\n*Name:* ${orderData.name}\n*Phone:* ${orderData.phone}\n*Item:* ${orderData.item} (${orderData.itemType})\n*Price per item:* ₹${orderData.price}\n*Quantity:* ${orderData.quantity}\n*Total Price:* ₹${orderData.totalPrice}\n\n*Please confirm my order.*`;
+        const whatsappUrl = `https://wa.me/916353636794?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+
         orderForm.reset();
         selectedItem = null;
         selectedItemDisplay.innerHTML = 'No item selected yet. Click on a menu item!';
